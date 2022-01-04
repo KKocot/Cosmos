@@ -1,0 +1,97 @@
+:root {
+  /* ------------COLORS------------ */
+  --navy: #0b0d17;
+  --purple: #d0d6f9;
+  --white: #ffffff;
+  /* ------------FONTS SIZES------------ */
+  --size-global: 18px;
+  --size-mobil-global: 15px;
+  --size-h1: 150px;
+  --size-mobil-h1: 80px;
+  --size-h2: 100px;
+  --size-mobil-h2: 56px;
+  --size-h3: 56px;
+  --size-mobil-h3: 40px;
+  --size-h4: 32px;
+  --size-mobil-h4: 24px;
+  --size-h5: 28px;
+  --size-mobil-h5: 16px;
+  --subheading1: 28px;
+  --subheading2: 14px;
+  --navText: 16px;
+  /* ------------FONTS STYLES------------ */
+  --barlowCondensed: "Barlow Condensed", sans-serif;
+  --bellefair: "Bellefair", serif;
+  --barlow: "Barlow", sans-serif;
+}
+html {
+  height: 667px;
+  width: 375px;
+}
+body {
+  background-color: var(--navy);
+  color: var(--white);
+  font-size: var(--size-mobil-global);
+  font-family: var(--barlow);
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+header {
+  justify-content: space-between;
+  display: flex;
+  margin: 24px;
+}
+.logo {
+  width: 40px;
+  height: 40px;
+}
+nav {
+  display: none;
+}
+.NavHumburger {
+  height: 21px;
+  width: 24px;
+  align-self: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+h1 {
+  text-transform: uppercase;
+  font-family: var(--bellefair);
+  font-size: var(--size-mobil-h1);
+}
+h2 {
+  text-transform: uppercase;
+  font-family: var(--bellefair);
+  font-size: var(--size-mobil-h2);
+}
+h3 {
+  text-transform: uppercase;
+  font-family: var(--bellefair);
+  font-size: var(--size-mobil-h3);
+}
+h4 {
+  text-transform: uppercase;
+  font-family: var(--bellefair);
+  font-size: var(--size-mobil-h4);
+}
+h5 {
+  text-transform: uppercase;
+  font-family: var(--barlowCondensed);
+  font-size: var(--size-mobil-h5);
+  color: var(--purple);
+  letter-spacing: 2.7px;
+}
+p {
+  color: var(--purple);
+  line-height: 25px;
+  margin-left: 26px;
+  margin-right: 26px;
+}
