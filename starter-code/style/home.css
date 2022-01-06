@@ -4,13 +4,14 @@ body {
 .button-explore {
   display: flex;
   background-color: var(--white);
-  color: var(--navy);
+  color: rgba(11, 13, 23, 1);
   align-self: center;
   height: 150px;
   width: 150px;
   border-radius: 100%;
-  font-weight: 600;
   font-size: 20px;
+  font-family: var(--bellefair);
+  letter-spacing: 1.25px;
   text-transform: uppercase;
   align-items: center;
   justify-content: center;
@@ -18,5 +19,41 @@ body {
   transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1);
 }
 .button-explore:hover {
-  box-shadow: 0 0 0 44px #d1cdcd79;
+  box-shadow: 0 0 0 44px rgba(151, 151, 151, 0.678);
+}
+.choiceHome {
+  border-right: 3px solid #ffffff;
+}
+@media (min-width: 376px) {
+  body {
+    background-image: url("../assets/home/background-home-tablet.jpg");
+    background-repeat: no-repeat;
+  }
+  .choiceHome {
+    border-right: 0px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+  }
+  .button-explore {
+    letter-spacing: 2px;
+    height: 242px;
+    width: 242px;
+    font-size: 32px;
+    margin-top: 129px;
+  }
+  .button-explore:hover {
+    box-shadow: 0 0 0 65px rgba(151, 151, 151, 0.678);
+  }
+}
+@media (min-width: 769px) {
+  body {
+    background-image: url("../assets/home/background-home-desktop.jpg");
+  }
+  .button-explore {
+    height: 274px;
+    width: 274px;
+    margin-top: 0;
+    margin-right: 168px;
+    margin-bottom: 106px;
+    align-self: flex-end;
+  }
 }

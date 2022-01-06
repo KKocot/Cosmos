@@ -6,6 +6,7 @@
   /* ------------FONTS SIZES------------ */
   --size-global: 18px;
   --size-mobil-global: 15px;
+  --size-tablet-global: 16px;
   --size-h1: 150px;
   --size-mobil-h1: 80px;
   --size-h2: 100px;
@@ -16,9 +17,11 @@
   --size-mobil-h4: 24px;
   --size-h5: 28px;
   --size-mobil-h5: 16px;
+  --size-tablet-h5: 20px;
   --subheading1: 28px;
   --subheading2: 14px;
   --navText: 16px;
+  --navText-tablet: 14px;
   /* ------------FONTS STYLES------------ */
   --barlowCondensed: "Barlow Condensed", sans-serif;
   --bellefair: "Bellefair", serif;
@@ -39,24 +42,62 @@ body {
   height: 100%;
   width: 100%;
   text-align: center;
+  background-position: bottom right;
 }
 header {
   justify-content: space-between;
   display: flex;
-  margin: 24px;
+  align-items: center;
+  padding: 24px;
 }
 .logo {
   width: 40px;
   height: 40px;
-}
-nav {
-  display: none;
 }
 .NavHumburger {
   height: 21px;
   width: 24px;
   align-self: center;
 }
+nav {
+  font-size: var(--navText);
+  font-family: var(--barlowCondensed);
+  letter-spacing: 2.7px;
+  display: none;
+  position: fixed;
+  flex-direction: column;
+  z-index: 999;
+  width: 59%;
+  height: 100%;
+  backdrop-filter: blur(50px);
+  top: 0;
+  right: 0; /* right: -38%; */
+  padding-top: 33px;
+  padding-left: 33px;
+  gap: 58px;
+  background-color: rgba(255, 255, 255, 0.055);
+}
+.closeX {
+  padding-right: 33px;
+  width: 19px;
+  height: 19px;
+  align-self: flex-end;
+}
+ul {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  text-align: start;
+}
+li {
+  padding: 7.5px;
+}
+.navNumber {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -92,6 +133,145 @@ h5 {
 p {
   color: var(--purple);
   line-height: 25px;
-  margin-left: 26px;
-  margin-right: 26px;
+  margin: 0 26px;
+}
+@media (min-width: 376px) {
+  html {
+    height: 1024px;
+    width: 768px;
+  }
+  body {
+    font-size: var(--size-tablet-global);
+    gap: 10.5%;
+  }
+  header {
+    padding: 0;
+  }
+  .logo {
+    margin-left: 39px;
+    width: 48px;
+    height: 48px;
+  }
+  .NavHumburger {
+    display: none;
+  }
+  nav {
+    font-size: var(--navText-tablet);
+    letter-spacing: 2.36px;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    z-index: 0;
+    width: 450px;
+    height: 96px;
+    backdrop-filter: blur(50px);
+    padding: 0;
+    gap: 0;
+  }
+  .closeX {
+    display: none;
+  }
+  ul {
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    gap: 37px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    height: 95%;
+  }
+  .navNumber {
+    display: none;
+  }
+  .choice {
+    padding: 0 1px;
+    border-bottom: 3px solid #ffffff00;
+  }
+  .choice:hover {
+    border-bottom: 3px solid var(--white);
+  }
+  main {
+    gap: 26px;
+    height: 100%;
+  }
+  h1 {
+    font-size: var(--size-h1);
+  }
+  h5 {
+    font-size: var(--size-tablet-h5);
+    letter-spacing: 3.38px;
+  }
+  p {
+    line-height: 28px;
+    margin: 0 165px;
+  }
+}
+@media (min-width: 769px) {
+  html {
+    height: 100%;
+    width: 100%;
+  }
+  body {
+    font-size: var(--size-global);
+    gap: 253px;
+    height: 100%;
+    width: 100%;
+  }
+  header {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 40px 0 0 0;
+  }
+  .logo {
+    margin-left: 50px;
+  }
+  .line {
+    border: 1px solid rgba(255, 255, 255, 0.418);
+    width: 473px;
+    position: absolute;
+    margin-left: 140px;
+    z-index: 1;
+  }
+  nav {
+    font-size: var(--navText);
+    letter-spacing: 2.7px;
+    width: 830px;
+  }
+  ul {
+    gap: 63px;
+  }
+  .navNumber {
+    display: inline;
+  }
+
+  main {
+    flex-direction: row;
+    gap: 25px;
+    justify-content: space-between;
+  }
+  .allText {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    width: 450px;
+    height: 382px;
+    text-align: left;
+    margin-left: 165px;
+  }
+  h5 {
+    font-size: var(--size-h5);
+    letter-spacing: 4.72px;
+  }
+  p {
+    margin: 0;
+    line-height: 32px;
+  }
 }
