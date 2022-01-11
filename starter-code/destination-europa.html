@@ -1,38 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Barlow+Condensed:wght@200&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
-
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  01 Pick your destination
-
-  Moon
-  Mars
-  Europa
-  Titan
-
-  Europa
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="./style/destination.css" />
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" alt="img" src="./assets/shared/logo.svg" />
+      <div class="navLine"></div>
+      <div class="navbar">
+        <nav>
+          <div class="lineIn"></div>
+          <img
+            id="closeX"
+            class="closeX"
+            alt="X"
+            src="./assets/shared/icon-close.svg"
+          />
+          <ul>
+            <li class="choice choiceHome">
+              <a href="./index.html"
+                ><span class="navNumber">00</span> <span>Home</span></a
+              >
+            </li>
+            <li class="choice choiceDest">
+              <a href="./destination-moon.html">
+                <span class="navNumber">01</span> <span>Destination</span>
+              </a>
+            </li>
+            <li class="choice choiceCrew">
+              <a href="./crew-commander.html"
+                ><span class="navNumber">02 </span><span>Crew</span></a
+              >
+            </li>
+            <li class="choice choiceTech">
+              <a href="./technology-spaceport.html"
+                ><span class="navNumber">03</span> <span>Technology</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <img
+          id="moblie-menu"
+          class="NavHumburger"
+          alt="NavHumburger"
+          src="./assets/shared/icon-hamburger.svg"
+        />
+      </div>
+    </header>
+    <main>
+      <div>
+        <h5>
+          <span class="numberHeading">01</span>
+          <span class="title">Pick your destination</span>
+        </h5 class="pickDest">
+        <img
+          class="moonPic"
+          alt="moon"
+          src="./assets/destination/image-europa.webp"
+        />
+      </div>
+      <div class="conteiner">
+        <ul class="choiceDes">
+          <li class="liStyleMoons ">
+            <a href="./destination-moon.html">Moon</a>
+          </li>
+          <li class="liStyleMoons">
+            <a href="./destination-mars.html">Mars</a>
+          </li>
+          <li class="liStyleMoons chosen">
+            <a href="./destination-europa.html">Europa</a>
+          </li>
+          <li class="liStyleMoons">
+            <a href="./destination-titan.html">Titan</a>
+          </li>
+        </ul>
+        <h2 class="headingMoon">Europa</h2>
+        <p>
+          
   The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
   winter lover’s dream. With an icy surface, it’s perfect for a bit of 
   ice skating, curling, hockey, or simple relaxation in your snug 
   wintery cabin.
-
-  Avg. distance
-  628 mil. km
-
-  Est. travel time
-  3 years
-</body>
+        </p>
+        <div class="line"></div>
+        <div class="footer-conteiner">
+          <div class="distance">
+            <div class="subheading2">Avg. distance</div>
+            <div class="subheading1">628 mil. km</div>
+          </div class="bottom-conteiner">
+          <div class="travelTime">
+            <div class="subheading2">Est. travel time</div>
+            <div class="subheading1">3 years</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </main>
+  </body>
 </html>

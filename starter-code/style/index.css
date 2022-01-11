@@ -10,6 +10,7 @@
   --size-h1: 150px;
   --size-mobil-h1: 80px;
   --size-h2: 100px;
+  --size-tablet-h2: 80px;
   --size-mobil-h2: 56px;
   --size-h3: 56px;
   --size-mobil-h3: 40px;
@@ -149,6 +150,9 @@ p {
   header {
     padding: 0;
   }
+  h2 {
+    font-size: var(--size-tablet-h2);
+  }
   .logo {
     margin-left: 39px;
     width: 48px;
@@ -275,6 +279,9 @@ p {
     /* margin-left: 165px;
     margin-bottom: 106px; */
     align-self: flex-end;
+  }
+  h2 {
+    font-size: var(--size-h2);
   }
   h5 {
     font-size: var(--size-h5);
