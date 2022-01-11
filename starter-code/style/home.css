@@ -1,5 +1,11 @@
 body {
   background-image: url("../assets/home/background-home-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.button-conteiner {
+  align-self: center;
+  bottom: 0;
 }
 .button-explore {
   display: flex;
@@ -27,7 +33,6 @@ body {
 @media (min-width: 376px) {
   body {
     background-image: url("../assets/home/background-home-tablet.jpg");
-    background-repeat: no-repeat;
   }
   .choiceHome {
     border-right: 0px solid #ffffff;
@@ -52,8 +57,12 @@ body {
     height: 274px;
     width: 274px;
     margin-top: 0;
-    margin-right: 168px;
-    margin-bottom: 106px;
+    /* margin-right: 168px;
+    margin-bottom: 106px; */
     align-self: flex-end;
+  }
+  .button-conteiner {
+    align-self: flex-end;
+    bottom: 0;
   }
 }

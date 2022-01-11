@@ -24,13 +24,19 @@
   <body>
     <header>
       <img class="logo" alt="img" src="./assets/shared/logo.svg" />
-      <div class="line"></div>
+      <div class="navLine"></div>
       <div class="navbar">
         <nav>
-          <img class="closeX" alt="X" src="./assets/shared/icon-close.svg" />
+          <div class="lineIn"></div>
+          <img
+            id="closeX"
+            class="closeX"
+            alt="X"
+            src="./assets/shared/icon-close.svg"
+          />
           <ul>
             <li class="choice choiceHome">
-              <a href="#"
+              <a href="./index.html"
                 ><span class="navNumber">00</span> <span>Home</span></a
               >
             </li>
@@ -52,6 +58,7 @@
           </ul>
         </nav>
         <img
+          id="moblie-menu"
           class="NavHumburger"
           alt="NavHumburger"
           src="./assets/shared/icon-hamburger.svg"
@@ -70,7 +77,9 @@
           experience!
         </p>
       </div>
-      <a class="button-explore" href="./destination-moon.html">Explore</a>
+      <div class="button-conteiner">
+        <a class="button-explore" href="./destination-moon.html">Explore</a>
+      </div>
     </main>
   </body>
 </html>
