@@ -15,6 +15,7 @@
   --size-h3: 56px;
   --size-mobil-h3: 40px;
   --size-h4: 32px;
+  --size-tablet-h4: 40px;
   --size-mobil-h4: 24px;
   --size-h5: 28px;
   --size-mobil-h5: 16px;
@@ -55,6 +56,9 @@ header {
   width: 40px;
   height: 40px;
 }
+.choice {
+  padding: 7.5px;
+}
 .NavHumburger {
   height: 21px;
   width: 24px;
@@ -78,7 +82,6 @@ nav {
   gap: 58px;
   background-color: rgba(255, 255, 255, 0.055);
 }
-
 .closeX {
   padding-right: 33px;
   width: 19px;
@@ -92,14 +95,11 @@ ul {
   gap: 19px;
   text-align: start;
 }
-li {
-  padding: 7.5px;
-}
+
 .navNumber {
   font-weight: bold;
   margin-right: 5px;
 }
-
 main {
   display: flex;
   flex-direction: column;
@@ -152,6 +152,9 @@ p {
   }
   h2 {
     font-size: var(--size-tablet-h2);
+  }
+  h4 {
+    font-size: var(--size-tablet-h4);
   }
   .logo {
     margin-left: 39px;
@@ -282,6 +285,9 @@ p {
   }
   h2 {
     font-size: var(--size-h2);
+  }
+  h4 {
+    font-size: 56px;
   }
   h5 {
     font-size: var(--size-h5);

@@ -1,0 +1,150 @@
+html {
+  height: 710px;
+}
+body {
+  background-image: url("../assets/crew/background-crew-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  gap: 0;
+  background-position: initial;
+}
+main {
+  gap: 23px;
+}
+.choiceCrew {
+  border-right: 0px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+}
+.numberHeading {
+  color: #ffffff34;
+  font-weight: bold;
+}
+.title {
+  font-weight: 400;
+  color: var(--white);
+}
+.picConteiner {
+  margin: auto;
+  width: 327px;
+  border-bottom: 1px solid rgba(56, 59, 75, 1);
+}
+
+.picCrew {
+  width: 177.12px;
+  height: 222x;
+  margin: auto;
+}
+.text-gap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.slider {
+  margin: 35px 0px 35px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+.sliderDot {
+  display: block;
+  height: 10px;
+  width: 10px;
+  background-color: rgba(255, 255, 255, 0.178);
+  border-radius: 50%;
+}
+.sliderDot:hover {
+  background-color: rgba(255, 255, 255, 0.507);
+}
+.role {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: var(--bellefair);
+}
+@media (min-width: 376px) {
+  body {
+    background-image: url("../assets/crew/background-crew-tablet.jpg");
+    gap: 50px;
+  }
+  main {
+    gap: 50px;
+  }
+  .picConteiner {
+    border-bottom: 0px solid rgba(56, 59, 75, 1);
+  }
+  .tablet-column {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .picCrew {
+    width: 456.37px;
+    height: 572px;
+    margin: auto;
+  }
+  .pickDest {
+    text-align: left;
+    margin: 0 0 0 39px;
+  }
+  .text-gap {
+    gap: 14px;
+  }
+  .role {
+    font-size: 24px;
+  }
+}
+@media (min-width: 769px) {
+  body {
+    background-image: url("../assets/crew/background-crew-desktop.jpg");
+    height: 1024px;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 0;
+    margin: 0;
+    justify-content: flex-start;
+  }
+  .pickDest {
+  }
+  .picConteiner {
+    width: 568.07px;
+    height: 712px;
+    margin: 0;
+    margin-left: 10px;
+  }
+  .sliderDot {
+    width: 15px;
+    height: 15px;
+  }
+  .picCrew {
+    width: 568.07px;
+    height: 712px;
+  }
+  .tablet-column {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    height: 700px;
+    justify-content: flex-start;
+    margin-top: -25px;
+    align-self: ;
+  }
+  .slider {
+    gap: 25px;
+    margin: 0;
+  }
+  .text-gap {
+    height: 300px;
+    width: 500px;
+  }
+  .conteinerSort {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .role {
+    font-size: 32px;
+    font-family: var(--bellefair);
+  }
+  p {
+    width: 450px;
+  }
+}
