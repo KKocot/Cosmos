@@ -28,7 +28,6 @@ main {
   width: 327px;
   border-bottom: 1px solid rgba(56, 59, 75, 1);
 }
-
 .picCrew {
   width: 177.12px;
   height: 222x;
@@ -68,10 +67,14 @@ main {
   main {
     gap: 50px;
   }
+  .conteiner {
+    display: flex;
+    flex-direction: column-reverse;
+  }
   .picConteiner {
     border-bottom: 0px solid rgba(56, 59, 75, 1);
   }
-  .tablet-column {
+  .textAslider {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -98,19 +101,43 @@ main {
   }
   main {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     text-align: left;
     gap: 0;
     margin: 0;
     justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+  }
+  .conteiner {
+    flex-direction: row-reverse;
+    margin: 0 0 0 50px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid rgba(56, 59, 75, 1);
   }
   .pickDest {
+    display: block;
+    height: 50px;
+    position: absolute;
+    margin: 0 0 0 50px;
   }
   .picConteiner {
     width: 568.07px;
     height: 712px;
     margin: 0;
     margin-left: 10px;
+    /* align-self: flex-end; */
+  }
+  .textAslider {
+    gap: 1em;
+  }
+  .slider {
+    gap: 25px;
+    margin: 0;
+    justify-content: flex-start;
   }
   .sliderDot {
     width: 15px;
@@ -120,25 +147,9 @@ main {
     width: 568.07px;
     height: 712px;
   }
-  .tablet-column {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    height: 700px;
-    justify-content: flex-start;
-    margin-top: -25px;
-    align-self: ;
-  }
-  .slider {
-    gap: 25px;
-    margin: 0;
-  }
   .text-gap {
     height: 300px;
-    width: 500px;
-  }
-  .conteinerSort {
-    display: flex;
-    flex-direction: column-reverse;
+    width: 650px;
   }
   .role {
     font-size: 32px;
