@@ -37,6 +37,7 @@ main {
   padding: 0 0 10px 0;
   font-family: var(--barlow);
   color: var(--purple);
+  border-bottom: 3px solid #ffffff00;
 }
 .chosen {
   border-bottom: 3px solid var(--white);

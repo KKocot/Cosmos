@@ -27,17 +27,12 @@ body {
 .button-explore:hover {
   box-shadow: 0 0 0 44px rgba(151, 151, 151, 0.678);
 }
-.choiceHome {
-  border-right: 3px solid #ffffff;
-}
+
 @media (min-width: 376px) {
   body {
     background-image: url("../assets/home/background-home-tablet.jpg");
   }
-  .choiceHome {
-    border-right: 0px solid #ffffff;
-    border-bottom: 3px solid #ffffff;
-  }
+
   .button-explore {
     letter-spacing: 2px;
     height: 242px;

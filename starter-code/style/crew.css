@@ -29,9 +29,23 @@ main {
   border-bottom: 1px solid rgba(56, 59, 75, 1);
 }
 .picCrew {
-  width: 177.12px;
-  height: 222x;
   margin: auto;
+}
+.picCom {
+  width: 177.12px;
+  height: 222px;
+}
+.picSpec {
+  width: 153.92px;
+  height: 222px;
+}
+.picPilot {
+  width: 180.73px;
+  height: 222px;
+}
+.picEng {
+  width: 226.15px;
+  height: 223px;
 }
 .text-gap {
   display: flex;
@@ -52,6 +66,9 @@ main {
   background-color: rgba(255, 255, 255, 0.178);
   border-radius: 50%;
 }
+.whiteDot {
+  background-color: #ffffff;
+}
 .sliderDot:hover {
   background-color: rgba(255, 255, 255, 0.507);
 }
@@ -60,6 +77,9 @@ main {
   font-family: var(--bellefair);
 }
 @media (min-width: 376px) {
+  html {
+    height: auto;
+  }
   body {
     background-image: url("../assets/crew/background-crew-tablet.jpg");
     gap: 50px;
@@ -73,15 +93,27 @@ main {
   }
   .picConteiner {
     border-bottom: 0px solid rgba(56, 59, 75, 1);
+    width: auto;
   }
   .textAslider {
     display: flex;
     flex-direction: column-reverse;
   }
-  .picCrew {
+  .picCom {
     width: 456.37px;
     height: 572px;
-    margin: auto;
+  }
+  .picSpec {
+    width: 368.85px;
+    height: 532px;
+  }
+  .picPilot {
+    width: 433.09px;
+    height: 532px;
+  }
+  .picEng {
+    width: 539.51px;
+    height: 532px;
   }
   .pickDest {
     text-align: left;
@@ -95,9 +127,12 @@ main {
   }
 }
 @media (min-width: 769px) {
+  html {
+    height: auto;
+  }
   body {
     background-image: url("../assets/crew/background-crew-desktop.jpg");
-    height: 1024px;
+    height: 900px;
   }
   main {
     display: flex;
@@ -105,14 +140,13 @@ main {
     text-align: left;
     gap: 0;
     margin: 0;
-    justify-content: flex-start;
-    align-items: flex-start;
+    align-items: flex-end;
     height: 100%;
     width: 100%;
   }
   .conteiner {
     flex-direction: row-reverse;
-    margin: 0 0 0 50px;
+    margin: 0 50px 0 50px;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -123,13 +157,30 @@ main {
     height: 50px;
     position: absolute;
     margin: 0 0 0 50px;
+    align-self: flex-start;
   }
   .picConteiner {
-    width: 568.07px;
-    height: 712px;
+    width: auto;
+    height: auto;
     margin: 0;
     margin-left: 10px;
     /* align-self: flex-end; */
+  }
+  .picCom {
+    width: 568.07px;
+    height: 712px;
+  }
+  .picSpec {
+    width: 453.44px;
+    height: 654px;
+  }
+  .picPilot {
+    width: 554.39px;
+    height: 681px;
+  }
+  .picEng {
+    width: 615.57px;
+    height: 607px;
   }
   .textAslider {
     gap: 1em;
@@ -142,10 +193,6 @@ main {
   .sliderDot {
     width: 15px;
     height: 15px;
-  }
-  .picCrew {
-    width: 568.07px;
-    height: 712px;
   }
   .text-gap {
     height: 300px;

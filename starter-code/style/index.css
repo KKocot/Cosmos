@@ -59,6 +59,9 @@ header {
 .choice {
   padding: 7.5px;
 }
+.choiceMenu {
+  border-right: 3px solid #ffffff;
+}
 .NavHumburger {
   height: 21px;
   width: 24px;
@@ -85,12 +88,7 @@ nav {
 .navIn {
   display: block;
 }
-.closeX {
-  padding-right: 33px;
-  width: 19px;
-  height: 19px;
-  align-self: flex-end;
-}
+
 ul {
   text-transform: uppercase;
   display: flex;
@@ -102,6 +100,11 @@ ul {
 .navNumber {
   font-weight: bold;
   margin-right: 5px;
+}
+.closeX {
+  margin: -5px 0px 35px 165px;
+  width: 19px;
+  height: 19px;
 }
 main {
   display: flex;
@@ -205,6 +208,10 @@ p {
   .choice {
     padding: 0 1px;
     border-bottom: 3px solid #ffffff00;
+  }
+  .choiceMenu {
+    border-right: 0px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
   }
   .choice:hover {
     border-bottom: 3px solid var(--white);
