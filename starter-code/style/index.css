@@ -88,7 +88,6 @@ nav {
 .navIn {
   display: block;
 }
-
 ul {
   text-transform: uppercase;
   display: flex;
@@ -96,7 +95,6 @@ ul {
   gap: 19px;
   text-align: start;
 }
-
 .navNumber {
   font-weight: bold;
   margin-right: 5px;

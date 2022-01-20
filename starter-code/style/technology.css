@@ -1,0 +1,150 @@
+html {
+  height: 710px;
+}
+body {
+  background-image: url("../assets/technology/background-technology-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: initial;
+  gap: 6px;
+}
+.numberHeading {
+  color: #ffffff34;
+  font-weight: bold;
+}
+.conteiner_tech {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+.pickFullSize {
+  display: none;
+}
+
+.conteiner_text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+p {
+  margin: 0 29px;
+  margin-top: 21px;
+}
+.header_site {
+  font-size: 14px;
+  letter-spacing: 2.36px;
+}
+.title {
+  font-weight: 400;
+  color: var(--white);
+}
+.pickSize {
+  height: 170px;
+  width: 375px;
+}
+.ul_technology {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.li_technology {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.541);
+  border-radius: 50%;
+}
+.li_technology:hover {
+  color: white;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0);
+}
+.li_currently {
+  background-color: white;
+  color: var(--navy);
+}
+
+.btnTech {
+  font-size: 16px;
+  font-family: var(--bellefair);
+}
+@media (min-width: 376px) {
+  html {
+    height: auto;
+  }
+  body {
+    background-image: url("../assets/technology/background-technology-tablet.jpg");
+    gap: 43px;
+  }
+  main {
+    gap: 58px;
+  }
+  .pickSize {
+    height: 310px;
+    width: 768px;
+  }
+
+  .li_technology {
+    width: 58px;
+    height: 58px;
+  }
+  .conteiner_text {
+    gap: 15px;
+  }
+  .header_site {
+    font-size: 16px;
+  }
+  .pickDest {
+    text-align: left;
+  }
+  p {
+    margin: 0 169px;
+  }
+}
+@media (min-width: 769px) {
+  body {
+    background-image: url("../assets/technology/background-technology-desktop.jpg");
+    width: auto;
+  }
+  main {
+    width: auto;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .conteiner_tech {
+    flex-direction: row;
+    gap: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .ul_technology {
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    gap: 39px;
+  }
+  .conteiner_text {
+    width: 500px;
+    justify-content: center;
+    text-align: start;
+  }
+
+  .pickSize {
+    display: none;
+  }
+  p {
+    margin: 0;
+  }
+  .pickFullSize {
+    display: block;
+    width: 515px;
+    height: 527px;
+  }
+}
