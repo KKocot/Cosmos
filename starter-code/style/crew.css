@@ -47,7 +47,7 @@ main {
   justify-content: center;
   gap: 10px;
 }
-.sliderDot {
+.li_dot_style {
   display: block;
   height: 10px;
   width: 10px;
@@ -57,7 +57,7 @@ main {
 .whiteDot {
   background-color: #ffffff;
 }
-.sliderDot:hover {
+.li_dot_style:hover {
   background-color: rgba(255, 255, 255, 0.507);
 }
 .h5_role {
@@ -175,7 +175,7 @@ main {
     margin: 0;
     justify-content: flex-start;
   }
-  .sliderDot {
+  .li_dot_style {
     width: 15px;
     height: 15px;
   }
