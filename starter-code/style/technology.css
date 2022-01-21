@@ -3,25 +3,17 @@ html {
 }
 body {
   background-image: url("../assets/technology/background-technology-mobile.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: initial;
   gap: 6px;
 }
-.numberHeading {
-  color: #ffffff34;
-  font-weight: bold;
-}
-.conteiner_tech {
+.container_tech {
   display: flex;
   flex-direction: column;
   gap: 21px;
 }
-.pickFullSize {
+.img_desktop {
   display: none;
 }
-
-.conteiner_text {
+.container_text {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -34,11 +26,7 @@ p {
   font-size: 14px;
   letter-spacing: 2.36px;
 }
-.title {
-  font-weight: 400;
-  color: var(--white);
-}
-.pickSize {
+.img_mobile {
   height: 170px;
   width: 375px;
 }
@@ -65,15 +53,11 @@ p {
   background-color: white;
   color: var(--navy);
 }
-
-.btnTech {
+.li_btn {
   font-size: 16px;
   font-family: var(--bellefair);
 }
 @media (min-width: 376px) {
-  html {
-    height: auto;
-  }
   body {
     background-image: url("../assets/technology/background-technology-tablet.jpg");
     gap: 43px;
@@ -81,7 +65,7 @@ p {
   main {
     gap: 58px;
   }
-  .pickSize {
+  .img_mobile {
     height: 310px;
     width: 768px;
   }
@@ -90,13 +74,13 @@ p {
     width: 58px;
     height: 58px;
   }
-  .conteiner_text {
+  .container_text {
     gap: 15px;
   }
   .header_site {
     font-size: 16px;
   }
-  .pickDest {
+  .header_content {
     text-align: left;
   }
   p {
@@ -109,14 +93,14 @@ p {
     width: auto;
   }
   main {
-    width: auto;
+    /* width: auto; */
     margin-right: 0;
     display: flex;
     flex-direction: column;
     gap: 25px;
   }
 
-  .conteiner_tech {
+  .container_tech {
     flex-direction: row;
     gap: 0;
     width: 100%;
@@ -130,19 +114,19 @@ p {
     width: auto;
     gap: 39px;
   }
-  .conteiner_text {
+  .container_text {
     width: 500px;
     justify-content: center;
     text-align: start;
   }
 
-  .pickSize {
+  .img_mobile {
     display: none;
   }
   p {
     margin: 0;
   }
-  .pickFullSize {
+  .img_desktop {
     display: block;
     width: 515px;
     height: 527px;

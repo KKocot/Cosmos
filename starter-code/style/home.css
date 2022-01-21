@@ -1,9 +1,8 @@
 body {
   background-image: url("../assets/home/background-home-mobile.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  gap: 24px;
 }
-.button-conteiner {
+.button-container {
   align-self: center;
   bottom: 0;
 }
@@ -31,8 +30,8 @@ body {
 @media (min-width: 376px) {
   body {
     background-image: url("../assets/home/background-home-tablet.jpg");
+    gap: 10.5%;
   }
-
   .button-explore {
     letter-spacing: 2px;
     height: 242px;
@@ -56,7 +55,7 @@ body {
     margin-bottom: 106px; */
     align-self: flex-end;
   }
-  .button-conteiner {
+  .button-container {
     align-self: flex-end;
     bottom: 0;
   }

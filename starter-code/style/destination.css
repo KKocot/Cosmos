@@ -3,35 +3,20 @@ html {
 }
 body {
   background-image: url("../assets/destination/background-destination-mobile.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: initial;
-  gap: 0;
 }
-main {
-  gap: 0;
-}
-.numberHeading {
-  color: #ffffff34;
-  font-weight: bold;
-}
-.title {
-  font-weight: 400;
-  color: var(--white);
-}
-.moonPic {
+.img_moon {
   display: flex;
   width: 170px;
   height: 170px;
   margin: 36px auto 28px auto;
 }
-.choiceDes {
+.ul_moons_nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 13px;
 }
-.liStyleMoons {
+.li_moons_btn {
   font-size: var(--subheading2);
   letter-spacing: 2.36px;
   padding: 0 0 10px 0;
@@ -39,15 +24,15 @@ main {
   color: var(--purple);
   border-bottom: 3px solid #ffffff00;
 }
-.chosen {
+.current_li {
   border-bottom: 3px solid var(--white);
   color: var(--white);
 }
-.liStyleMoons:hover {
+.li_moons_btn:hover {
   border-bottom: 3px solid rgba(255, 255, 255, 0.493);
   color: var(--purple);
 }
-.headingMoon {
+.content_header {
   margin: 24px 0 4px 0;
 }
 .line {
@@ -56,6 +41,7 @@ main {
   align-self: center;
   margin: 31px auto 34px auto;
 }
+
 .subheading1 {
   font-family: var(--bellefair);
   font-size: var(--subheading1);
@@ -81,18 +67,22 @@ main {
     text-align: left;
     margin: 42px 0 0 39px;
   }
-  .moonPic {
+  .img_moon {
     width: 300px;
     height: 300px;
     margin: 62px auto 57px auto;
   }
-  .choiceDest {
+  .ul_moons_navt {
     border-right: 0px solid #ffffff;
     border-bottom: 3px solid #ffffff;
     gap: 29px;
   }
-  .headingMoon {
+  .content_header {
     margin: 41px 0 4px 0;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-evenly;
   }
   .line {
     border-bottom: 1px solid rgba(56, 59, 75, 1);
@@ -109,24 +99,24 @@ main {
     gap: 150px;
     text-align: left;
   }
-  .moonPic {
+  .img_moon {
     width: 445px;
     height: 445px;
     margin-left: 69px;
   }
-  .conteiner {
+  .main_container {
     width: 444px;
   }
-  .choiceDes {
+  .ul_moons_nav {
     justify-content: start;
     gap: 13px;
     margin-top: 64px;
   }
-  .liStyleMoons {
+  .li_moons_btn {
     font-size: 16px;
     letter-spacing: 2.7px;
   }
-  .headingMoon {
+  .content_header {
     margin: 24px 0 15px 0;
   }
   h5 {
@@ -136,9 +126,5 @@ main {
     border-bottom: 1px solid rgba(56, 59, 75, 1);
     width: 444px;
     margin: 60px auto 34px auto;
-  }
-  .footer-conteiner {
-    display: flex;
-    gap: 50px;
   }
 }
